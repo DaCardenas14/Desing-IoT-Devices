@@ -18,6 +18,12 @@ void setup() {
 }
 
 // Colocar funcion del sensor
+float sensor(){
+  ADC = analogRead(34);
+  temperatura = ADC*0.3;
+  Serial.println(temperatura);
+  return temperatura;
+}
 
 // Colocar funcion para el envio de los datos
 
