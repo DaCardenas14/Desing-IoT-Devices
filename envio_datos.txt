@@ -20,7 +20,7 @@ const char *WIFI_PASS = "MAS970726";      // Poner Clave WIFI
 const char *DEVICE_LABEL = "esp32_main";   // Poner etiqueta de dispositivo Put here your Device label to which data  will be published
 const char *VARIABLE_LABEL = "sensor"; // Poner etiqueta de variable Put here your Variable label to which data  will be published
 
-
+int boton = 2;
 const int PUBLISH_FREQUENCY = 1000; // Update rate in milliseconds
 
 unsigned long timer;
@@ -77,5 +77,9 @@ void envioDatos(){
 }
 
 void loop() {
+
+if(digitalRead(boton)){
+    Serial.println("Boton pulsado");
+  }
 
 }
