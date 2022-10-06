@@ -1,0 +1,27 @@
+/******************************************
+ *
+ * Lectura temperatura ESP32 y envio de datos a ubidots
+ * Juan Amortegui-Diego Cardenas
+ * Diseño de Dispositivos IoT
+ *
+ * ****************************************/
+
+int LecturaAnaloga = 34;
+float temperatura;
+float valorMultiplicador = 0.193877;
+float ADC;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+
+}
+
+// Colocar funcion del sensor
+
+// Colocar funcion para el envio de los datos
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
