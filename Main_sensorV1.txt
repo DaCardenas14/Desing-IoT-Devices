@@ -19,8 +19,8 @@ void setup() {
 
 // Colocar funcion del sensor
 float sensor(){
-  ADC = analogRead(34);
-  temperatura = ADC*0.3;
+  ADC = analogRead(LecturaAnaloga);
+  temperatura = ADC*valorMultiplicador;
   Serial.println(temperatura);
   return temperatura;
 }
@@ -29,5 +29,5 @@ float sensor(){
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  sensor();
 }
