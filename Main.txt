@@ -1,0 +1,13 @@
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+// Colocar funcion del sensor
+
+// Colocar funcion para el envio de los datos
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
