@@ -80,6 +80,7 @@ void loop() {
 
 if(digitalRead(boton)){
     Serial.println("Boton pulsado");
+    envioDatos();
   }
 
 }
